@@ -1,16 +1,23 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "es6",
     "module": "commonjs",
     "baseUrl": "./src",
     "outDir": "./dist",
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "tsc-alias": {
+    "declaration": false
   },
   "include": [
     "./src/**/*",
-    "./test/**/*"
+  ],
+  "exclude": [
+    "./src/**/*.test.ts",
+    "./src/**/*.spec.ts"
   ]
 }
